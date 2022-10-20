@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    background: white;
+    position: relative;
+    background: rgb(74, 204, 237);
+
+}
+.copyright {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.copyright h6 {
+    font: 1.5rem 'Roboto Slab', serif;
+}
+.copyright h6::selection {
+    color: #fff;
+    background: green;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+.container header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container header .content {
+    position: relative;
+}
+.container header .content input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid #555;
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    font: 22px sans-serif;
+    color: #333;
+    padding: 0 40px 0 20px;
+}
+.container header .content input:focus {
+    border: 2px solid rgb(80, 220, 255);
+}
+.container header .content button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: url(img/search.jpg) no-repeat center / 60%;
+}
+.container .main .card {
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    align-self: flex-start;
+}
+.container .main .card h1 {
+    font: 26px sans-serif;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+}
+.container .main .card .country {
+    font: 30px sans-serif;
+}
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 100%;
+    }
+    .container .main {
+        padding: 20px 20px 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container .main .card {
+        width: 100%;;
+    }
+    .container header .content input {
+        width: 100%;
+    }
+}
